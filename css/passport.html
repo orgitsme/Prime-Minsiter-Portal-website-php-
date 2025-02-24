@@ -1,0 +1,438 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="4ZdOwLUh15JAr5iTfyxYjeHrNsUquZZ72Dk41xxi">
+
+    <title>Pakistan Citizen&#039;s Portal</title>
+
+    
+    <link rel="shortcut icon" href="https://web.citizenportal.gov.pk/images/portal.png" />
+  <!--===============================================================================================-->
+  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/loginstyles/vendor/bootstrap/css/bootstrap.min.css">
+  <!--===============================================================================================-->
+  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/loginstyles/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <!--===============================================================================================-->
+  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/loginstyles/fonts/iconic/css/material-design-iconic-font.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Della+Respira&display=swap" rel="stylesheet">
+
+  <!--===============================================================================================-->
+  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/loginstyles/vendor/animate/animate.css">
+  <!--===============================================================================================-->
+  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/loginstyles/vendor/css-hamburgers/hamburgers.min.css">
+  <!--===============================================================================================-->
+  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/loginstyles/vendor/animsition/css/animsition.min.css">
+  <!--===============================================================================================-->
+  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/loginstyles/vendor/select2/select2.min.css">
+  <!--===============================================================================================-->
+  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/loginstyles/vendor/daterangepicker/daterangepicker.css">
+  <!--===============================================================================================-->
+  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/loginstyles/css/util.css">
+  	<link rel="stylesheet" type="text/css" href="https://web.citizenportal.gov.pk/loginstyles/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://web.citizenportal.gov.pk/assetsmaterial/css/material-dashboard.css?v=2.1.1" rel="stylesheet" />
+
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+
+    <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  
+<script language="JavaScript">
+window.history.forward();
+</script>
+    
+
+
+</head>
+<body>
+            <style>
+.switch-toggle {
+   float: left;
+   background: #242729;
+}
+.switch-toggle input {
+  position: absolute;
+  opacity: 0;
+}
+.switch-toggle input + label {
+  padding: 7px;
+  float:left;
+  color: #fff;
+  cursor: pointer;
+}
+.switch-toggle input:checked + label {
+  background: green;
+}
+
+</style>
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('images/pmdu-bg.jpg');">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form" action="https://web.citizenportal.gov.pk/citizen_login" id="login_form" method="post">
+					<span class="login100-form-logo">
+						<img src="https://web.citizenportal.gov.pk/images/portal.png" style="width: 100%;">
+					</span>
+
+					<span class="login100-form-title p-b-15 p-t-10" style="color:black">
+						Log in
+					</span>
+
+          <div class="row">
+            
+            <div class="col-md-8 col-md-offset-1 col-sm-8 col-xs-2">
+          <div class="switch-toggle switch-3 switch-candy">
+
+            
+
+            <input id="na" name="state-d" type="radio" checked="checked" value="2"/>
+            <label for="na" class="disabled" onclick="">   CNIC  </label>
+
+            <input id="off" name="state-d" type="radio"  value="3"/>
+            <label for="off" onclick="">Passport #</label>
+
+          </div>
+        </div>
+      </div>
+					<div class="wrap-input100 " data-validate = "Enter cnic" style="margin-top:20px;" id="div_cnic">
+            <input class="input100" type="text" name="cnic"  placeholder="CNIC شناختی کارڈ نمبر" id="input_cnic"  style="padding-left: 25px !important;" maxlength="15">
+						<span class="focus-input100" data-placeholder="&#xf207;"></span>
+					</div>
+
+
+
+          <div class="wrap-input100" data-validate = "Enter username" style="margin-top:20px ;display:none" id="div_username">
+						<input class="input100" type="text"  name="username" placeholder="Username صارف کا نام" id="input_username" style="padding-left: 25px !important;;">
+						<span class="focus-input100" data-placeholder="&#xf207;"></span>
+					</div>
+
+
+
+          <div class="wrap-input100" data-validate = "Enter passport" style="margin-top:20px;display:none" id="div_passport">
+            <input class="input100" type="text" name="passport"  placeholder="Passport پاسپورٹ" id="input_passport" style="padding-left: 25px !important;;">
+						<span class="focus-input100" data-placeholder="&#xf207;"></span>
+					</div>
+
+
+
+					<div class="wrap-input100 validate-input" data-validate="Enter password">
+						<input class="input100" type="password" name="password"  placeholder="Password پاس ورڈ" id="password" style="padding-left: 25px !important;;">
+						<span class="focus-input100" data-placeholder="&#xf191;"></span>
+					</div>
+
+					<div class="contact100-form-checkbox">
+						<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+						<label class="label-checkbox100" for="ckb1" style="color:black">
+							Remember me
+						</label>
+					</div>
+
+          <div class="row">
+          <div class="form-group wrap-input100">
+                            <label class="col-md-4 control-label">Captcha</label>
+                            <div class="col-md-12">
+                                <div data-sitekey="6LfxqsYZAAAAAGzdrFAM3uxK0lXuiuAG9wPNq8ue" class="g-recaptcha"></div>
+                                                            </div>
+                        </div>
+                      </div>
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" type="submit">
+							Login
+						</button>
+					</div>
+
+					<div class="text-center">
+						<a class="txt1" href="https://web.citizenportal.gov.pk/forget-password" style="color:red">
+							Forgot Password?
+						</a>
+					</div>
+
+					<div class="text-center">
+						<a class="txt1" href="https://web.citizenportal.gov.pk/remove-account" style="color:red">
+							Deactivate Account?
+						</a>
+					</div>
+
+            <div class="text-center">
+						<a class="txt1" onclick="test()" href="#" data-toggle="modal" data-target="#tutorials_modal" style="color:red">
+							Tutorials
+						</a>
+					</div>
+
+          <div class="text-center">
+						<a class="txt1" href="https://web.citizenportal.gov.pk/register" style="color:black">
+							Don't have an account ? <b style="color:red">Register</b>
+						</a>
+					</div>
+        <input type="hidden" name="_token" value="4ZdOwLUh15JAr5iTfyxYjeHrNsUquZZ72Dk41xxi">				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="dropDownSelect1"></div>
+
+<!-- <div class="modal" tabindex="-1" role="dialog" id="modalfederal" style="background-color: #0000008c;
+    width: 100%;
+    max-height: 100%;">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="text-align:center">
+        <h5 class="modal-title" style="width:100%;color:red">Attention / 'متوجہ ہوں</h5>
+      </div>
+      <div class="modal-body">
+      <div class="row">
+        <div class="col-md-12">
+          <h6>Respected Citizen! For the time being, This facility is available only for the citizen of federal (Islamabad). However, you can download the Citizens portal Mobile application to use this service from Google Play and Apple App store.</h6>
+        </div>
+
+        <div class="col-md-12">
+            <h5>قابل احترام شہری ، یہ سہولت صرف فیڈرل (اسلام آباد) کے شہری کے لئے دستیاب ہے۔ تاہم ، آپ موبائل ایپ اسٹور سے اس سروس کو استعمال کرنے کے لئے سٹیزنز پورٹل موبائل ایپلی کیشن ڈاؤن لوڈ کرسکتے ہیں۔</h5>
+        </div>
+
+
+
+      </div>
+
+      </div>
+      <div class="modal-footer" style="height:100%">
+        <div class="row" style="width:100%;margin: 0px;">
+          <div class="col-md-12"style="margin-top:5px;">
+        <a  class="btn btn-primary" id="" style="width:100%" onclick="closefederal()">OK</a>
+      </div>
+
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+ -->
+<div class="modal fade" id="tutorials_modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" style="width: 100%; max-height:100%; background-color: #0000008c;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card card-plain">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title mt-0 text-center"> Tutorials</h4>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table id="tutorials_table" class="table table-hover">
+                      <tbody>
+                          
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                </div>
+              </div>
+              <button class="btn btn-primary float-right" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                Close
+        </button>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+<!--===============================================================================================-->
+	<script src="https://web.citizenportal.gov.pk/loginstyles/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="https://web.citizenportal.gov.pk/loginstyles/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="https://web.citizenportal.gov.pk/loginstyles/vendor/bootstrap/js/popper.js"></script>
+	<script src="https://web.citizenportal.gov.pk/loginstyles/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+<script src="https://web.citizenportal.gov.pk/assetsmaterial/js/material-dashboard.js?v=2.1.2" type="text/javascript"></script>
+	<script src="https://web.citizenportal.gov.pk/loginstyles/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="https://web.citizenportal.gov.pk/loginstyles/vendor/daterangepicker/moment.min.js"></script>
+	<script src="https://web.citizenportal.gov.pk/loginstyles/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="https://web.citizenportal.gov.pk/loginstyles/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="https://web.citizenportal.gov.pk/loginstyles/js/main.js"></script>
+
+  <script src="https://web.citizenportal.gov.pk/notify/bootstrap-notify.js"></script>
+  <script src="https://web.citizenportal.gov.pk/notify/bootstrap-notify.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.6/dist/loadingoverlay.min.js" ></script>
+    <!-- <script>
+$("#modalfederal").show();
+
+function closefederal()
+{
+$("#modalfederal").hide();
+}
+</script> -->
+
+<script>
+  
+    function test() {
+        // console.log('clicked!');
+        $.ajax({
+           type:'POST',
+           url:'https://api.pmdu.gov.pk/api/lists/tutorials',
+           data: {},
+           success:function(data){
+              // $("#msg").html(data.msg);
+              $("#tutorials_table > tbody").empty();
+              data.data.forEach(element => {
+
+                $("#tutorials_table > tbody").append('<tr><td><a href="' + element.video_link + '" target="_blank">'  + element.english_title + '</a></td></tr>')
+              });
+           }
+        });
+        $('#tutorials_modal').show();
+    }
+$('input[type=radio][name=state-d]').change(function() {
+if (this.value == '1') {
+  $("#div_cnic").css("display","none");
+  $("#input_cnic").prop('required',false);
+  $("#div_passport").css("display","none");
+  $("#input_passport").prop('required',false);
+  $("#div_username").css("display","none");
+  $("#input_username").prop('required',false);
+  $("#div_username").css("display","block");
+  $("#input_username").prop('required',true);
+}
+else if (this.value == '2') {
+  $("#div_cnic").css("display","none");
+  $("#input_cnic").prop('required',false);
+  $("#div_passport").css("display","none");
+  $("#input_passport").prop('required',false);
+  $("#div_username").css("display","none");
+  $("#input_username").prop('required',false);
+  $("#div_cnic").css("display","block");
+  $("#input_cnic").prop('required',true);
+}
+else if (this.value == '3') {
+  $("#div_cnic").css("display","none");
+  $("#input_cnic").prop('required',false);
+  $("#div_passport").css("display","none");
+  $("#input_passport").prop('required',false);
+  $("#div_username").css("display","none");
+  $("#input_username").prop('required',false);
+  $("#div_passport").css("display","block");
+  $("#input_passport").prop('required',true);
+}
+});
+</script>
+
+<script>
+ function submitForm()
+ {
+   var login_type = $('input[type=radio][name=state-d]:checked').val();
+   var login;
+   if(login_type == 1)
+   {
+     login = $("#input_username").val();
+   }
+   else if (login_type == 2)
+   {
+     login = $("#input_cnic").val();
+   }
+   else if (login_type == 3)
+   {
+     login = $("#input_passport").val();
+   }
+   var password = $("#password").val();
+
+   if(login_type == null || login_type == "")
+   {
+     alert("login type missing");
+   }
+   else if(login == null || login == "")
+   {
+      alert("login  missing");
+   }
+   else if(password == null || password == "")
+   {
+      alert("password  missing");
+   }
+   else {
+     $("#login_form").submit();
+   }
+ }
+
+</script>
+
+<script>
+
+$('#input_cnic').keydown(function(){
+
+  //allow  backspace, tab, ctrl+A, escape, carriage return
+  if (event.keyCode == 8 || event.keyCode == 9
+                    || event.keyCode == 27 || event.keyCode == 13
+                    || (event.keyCode == 65 && event.ctrlKey === true) )
+                        return;
+  if((event.keyCode < 48 || event.keyCode > 57))
+   event.preventDefault();
+
+  var length = $(this).val().length;
+
+
+  if(length == 5 || length == 13)
+   $(this).val($(this).val()+'-');
+
+ });
+</script>
+
+ <script src="https://www.google.com/recaptcha/api.js?" async defer></script>
+
+  <script>
+
+                </script>
+    <script>
+        function showloader()
+        {
+           $.LoadingOverlay("show");
+        }
+    </script>
+
+    <!-- <script>
+    var banned = [''];
+      var aTags = document.getElementsByTagName("input");
+      for (var i=0;i<aTags.length;i++){
+          aTags[i].addEventListener('keyup', function(e) {
+          var text = $(this).val();
+          for (var x=0;x<banned.length;x++) {
+              if (text.search(banned[x]) !== -1) {
+
+              }
+              var regExp = new RegExp(banned[x]);
+              text = text.replace(regExp,'');
+          }
+          $(this).val(text);
+          },false);
+      }
+    </script> -->
+
+    <!-- <script>
+    var banned = [ '!','@','#','$','%','^','&','-','_','=',',','<','>','.','{' ,'}','|'];
+      var aTags = document.getElementsByClassName("specialchar");
+      for (var i=0;i<aTags.length;i++){
+          aTags[i].addEventListener('keyup', function(e) {
+          var text = $(this).val();
+          for (var x=0;x<banned.length;x++) {
+              if (text.search(banned[x]) !== -1) {
+
+              }
+              var regExp = new RegExp(banned[x]);
+              text = text.replace(regExp,'');
+          }
+          $(this).val(text);
+          },false);
+      }
+    </script> -->
+</html>

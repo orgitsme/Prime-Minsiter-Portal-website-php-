@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+   // background: url('../images/cm.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-image: linear-gradient(green,powderblue);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    text-align: center;
+    color: #fff;
+}
+
+header {
+    padding: 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+header h2 {
+    font-size: 1.5em;
+    color: red;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portal {
+    background-color: rgba(29, 27, 27, 0.652);
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px;
+}
+
+.welcome-text h3 {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.button {
+    display: inline-block;
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ffcc00;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+form input,
+form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #FFD700;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #FFA500;
+}
+
+footer {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+footer p {
+    margin: 0px 0;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.social-media img {
+    width: 30px;
+    margin: 0 10px;
+}
+#forget{
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 13px;
+}
+#hi{
+    color: rgb(177, 75, 75);
+}
+#homeButton {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;   
+}
+
+#homeButton img {
+    width: 200px;
+    height: 20s0px;
+    background-color: rgb(247, 245, 250);
+    border-radius: 10px;
+    
+}
+.marquee {
+    font-weight: 400;
+    color: #FFF;
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+    will-change: transform;
+    animation: marquee 20s linear infinite;
+    BORDER:1PX SOLID rgb(44, 41, 41);
+    background-color: rgb(65, 66, 66);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: large;
+      margin: 10PX;
+      cursor: pointer;
+     
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(50%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
